@@ -11,7 +11,7 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: 0;
+  margin: 0 auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -77,13 +77,12 @@ ol {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content;
-  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 16px;
 }
 
 .result__video-container {
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 70px;
+  position: relative;
   width: 711px;
   height: 386px;
 }
@@ -95,13 +94,14 @@ ol {
 }
 
 .search-form {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  align-items: flex-start;
   height: 54px;
   width: 711px;
   gap: 40px;
-  grid-area: 2;
 }
+
 
 .search-form__label {
   display: inline-flex;
@@ -179,15 +179,15 @@ input[type="text"]::placeholder {
 }
 
 .search-form__submit-button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  top: 21px;
   width: 194px;
   height: 34px;
 }
 
 .content__details {
-  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content;
   inline-size: 399px;
 }
 
@@ -214,7 +214,7 @@ input[type="text"]::placeholder {
 }
 
 .content__list {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   height: 298px;
