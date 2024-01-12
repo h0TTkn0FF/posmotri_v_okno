@@ -99,7 +99,7 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
   align-items: flex-start;
-  height: 54px;
+  min-height: 54px;
   width: 711px;
   gap: 40px;
 }
@@ -192,6 +192,7 @@ input[type="text"]::placeholder {
   display: grid;
   grid-template-rows: 1fr min-content;
   inline-size: 399px;
+  gap: 26px;
 }
 
 .title {
